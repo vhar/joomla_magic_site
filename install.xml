@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf8"?>
+
+<extension type="component" version="3.9" method="upgrade">
+  <name>COM_MAGICSITE</name>
+  <creationDate>June 2021</creationDate>
+  <author>Vladimir Kharinenkov</author>
+  <authorEmail>vhar@mail.ru</authorEmail>
+  <authorUrl>https://edusite.ru</authorUrl>
+  <license>MIT License</license>
+  <version>1.0.1</version>
+  <description>COM_MAGICSITE_DESCRIPTION</description>
+
+  <files folder="site">
+    <folder>models</folder>
+    <folder>views</folder>
+
+    <filename>controller.php</filename>
+    <filename>magicsite.php</filename>
+    <filename>router.php</filename>
+  </files>
+
+  <languages folder="site/language">
+    <language tag="ru-RU">ru-RU/ru-RU.com_magicsite.ini</language>
+  </languages>
+
+  <install>
+    <sql>
+      <file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+    </sql>
+  </install>
+
+  <uninstall>
+    <sql>
+      <file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
+    </sql>
+  </uninstall>
+
+  <administration>
+    <menu link="index.php?option=com_magicsite">COM_MAGICSITE</menu>
+
+    <files folder="admin">
+      <folder>controllers</folder>
+      <folder>models</folder>
+      <folder>sql</folder>
+      <folder>tables</folder>
+      <folder>views</folder>
+
+      <filename>config.xml</filename>
+      <filename>controller.php</filename>
+      <filename>magicsite.php</filename>
+    </files>
+
+    <languages folder="admin/language">
+      <language tag="ru-RU">ru-RU/ru-RU.com_magicsite.ini</language>
+      <language tag="ru-RU">ru-RU/ru-RU.com_magicsite.sys.ini</language>
+    </languages>
+  </administration>
+
+  <scriptfile>script.php</scriptfile>
+
+</extension>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<form>
+  <fieldset name="details" label="COM_MAGICSITE_ITEM_DETAILS">
+    <field
+      name="id"
+      type="hidden"
+    />
+    <field
+      name="title"
+      type="text"
+      default=""
+      label="COM_MAGICSITE_ITEM_TITLE_LABEL"
+      description="COM_MAGICSITE_ITEM_TITLE_DESC"
+      size="40"
+      class="input-xxlarge input-large-text"
+      required="true"
+    />
+    <field
+      name="category"
+      type="list"
+      default="sveden"
+      label="COM_MAGICSITE_ITEM_CATEGORY_LABEL"
+      description="COM_MAGICSITE_ITEM_CATEGORY_DESC"
+      size="40"
+      class="chzn-color"
+      >
+      <option	value="sveden">Сведения об образовательной организации</option>
+      <option	value="infosec">Информационная безопасность</option>
+      <option	value="anticorruption">Противодействие коррупции</option>
+      <option	value="qualityassessment">Независимая оценка качества</option>
+      <option	value="shedule">Дистанционное обучение</option>
+      <option	value="educative">Воспитательная работа</option>
+      <option	value="food">Организация питания</option>
+    </field>
+    <field
+      name="alias"
+      type="text"
+      default=""
+      label="COM_MAGICSITE_ITEM_ALIAS_LABEL"
+      description="COM_MAGICSITE_ITEM_ALIAS_DESC"
+      size="40"
+      class="input-xxlarge input-large-text"
+      required="true"
+    />
+    <field
+      name="weight"
+      type="number"
+      default=""
+      label="COM_MAGICSITE_ITEM_WEIGHT_LABEL"
+      description="COM_MAGICSITE_ITEM_WEIGHT_DESC"
+      size="40"
+      class="input-xxlarge input-large-text"
+    />
+    <field
+      name="published"
+      type="list"
+      label="JSTATUS"
+      description="JFIELD_PUBLISHED_DESC"
+      class="chzn-color-state"
+      filter="intval"
+      size="1"
+      default="1"
+      >
+      <option value="1">JPUBLISHED</option>
+      <option value="0">JUNPUBLISHED</option>
+    </field>
+  </fieldset>
+</form>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+  <fieldset
+    name="magicsite_options"
+    addrulepath="components/com_magicsite/models/rules"
+    label="COM_MAGICSITE_OPTIONS_LABEL"
+    >
+
+    <field
+      name="magicsite_url"
+      type="text"
+      label="COM_MAGICSITE_FIELD_URL_LABEL"
+      description="COM_MAGICSITE_FIELD_URL_DESC"
+      validate="magicsiteurl"
+      default=""
+      message=""
+    />
+  </fieldset>
+</config>

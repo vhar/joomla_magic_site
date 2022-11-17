@@ -7,7 +7,7 @@
   <authorEmail>vhar@mail.ru</authorEmail>
   <authorUrl>https://edusite.ru</authorUrl>
   <license>MIT License</license>
-  <version>1.0.1</version>
+  <version>1.0.2</version>
   <description>COM_MAGICSITE_DESCRIPTION</description>
 
   <files folder="site">
